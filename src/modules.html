@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modules &mdash; Python  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/solarsync_favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Usage" href="usage.html" />
+    <link rel="prev" title="Installation Guide" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #829F93" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/solarsync_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#api">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv47api_lib"><code class="docutils literal notranslate"><span class="pre">api_lib</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N7api_lib11getResponseEv"><code class="docutils literal notranslate"><span class="pre">api_lib::getResponse()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N7api_lib9clearJsonEv"><code class="docutils literal notranslate"><span class="pre">api_lib::clearJson()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N7api_lib10createJsonEffffffb"><code class="docutils literal notranslate"><span class="pre">api_lib::createJson()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N7api_lib6setSASE6String"><code class="docutils literal notranslate"><span class="pre">api_lib::setSAS()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N7api_lib8responseE"><code class="docutils literal notranslate"><span class="pre">api_lib::response</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#wifi">Wifi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv415wifi_connection"><code class="docutils literal notranslate"><span class="pre">wifi_connection</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N15wifi_connection15wifi_connectionE6String6String"><code class="docutils literal notranslate"><span class="pre">wifi_connection::wifi_connection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N15wifi_connection7setSSIDE6String"><code class="docutils literal notranslate"><span class="pre">wifi_connection::setSSID()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N15wifi_connection11setPasswordE6String"><code class="docutils literal notranslate"><span class="pre">wifi_connection::setPassword()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4NK15wifi_connection5getIPEv"><code class="docutils literal notranslate"><span class="pre">wifi_connection::getIP()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4NK15wifi_connection9getStatusEv"><code class="docutils literal notranslate"><span class="pre">wifi_connection::getStatus()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4NK15wifi_connection11isConnectedEv"><code class="docutils literal notranslate"><span class="pre">wifi_connection::isConnected()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N15wifi_connection7connectEi"><code class="docutils literal notranslate"><span class="pre">wifi_connection::connect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N15wifi_connection10disconnectEv"><code class="docutils literal notranslate"><span class="pre">wifi_connection::disconnect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N15wifi_connection10setModeOffEv"><code class="docutils literal notranslate"><span class="pre">wifi_connection::setModeOff()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dht">Dht</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv49DHTSensor"><code class="docutils literal notranslate"><span class="pre">DHTSensor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N9DHTSensor9DHTSensorEi"><code class="docutils literal notranslate"><span class="pre">DHTSensor::DHTSensor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N9DHTSensor11getHumidityEv"><code class="docutils literal notranslate"><span class="pre">DHTSensor::getHumidity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N9DHTSensor14getTemperatureEv"><code class="docutils literal notranslate"><span class="pre">DHTSensor::getTemperature()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N9DHTSensor9getValuesEv"><code class="docutils literal notranslate"><span class="pre">DHTSensor::getValues()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N9DHTSensor16isCorrect_valuesEPf"><code class="docutils literal notranslate"><span class="pre">DHTSensor::isCorrect_values()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N9DHTSensor7isReadyEv"><code class="docutils literal notranslate"><span class="pre">DHTSensor::isReady()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#logging">Logging</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv48myLogger"><code class="docutils literal notranslate"><span class="pre">myLogger</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger7level_tE"><code class="docutils literal notranslate"><span class="pre">myLogger::level_t</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger8myLoggerER8SDCustomii7level_t"><code class="docutils literal notranslate"><span class="pre">myLogger::myLogger()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger4initEv"><code class="docutils literal notranslate"><span class="pre">myLogger::init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4NK8myLogger8getLevelEv"><code class="docutils literal notranslate"><span class="pre">myLogger::getLevel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4NK8myLogger10getLogPathEv"><code class="docutils literal notranslate"><span class="pre">myLogger::getLogPath()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4NK8myLogger10getLogFileEv"><code class="docutils literal notranslate"><span class="pre">myLogger::getLogFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger13setOldLogFileEi"><code class="docutils literal notranslate"><span class="pre">myLogger::setOldLogFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4NK8myLogger13getOldLogFileEv"><code class="docutils literal notranslate"><span class="pre">myLogger::getOldLogFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger10setLogPathEi"><code class="docutils literal notranslate"><span class="pre">myLogger::setLogPath()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger10setLogFileEi"><code class="docutils literal notranslate"><span class="pre">myLogger::setLogFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger14setLogFullPathEv"><code class="docutils literal notranslate"><span class="pre">myLogger::setLogFullPath()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger8setLevelE7level_t"><code class="docutils literal notranslate"><span class="pre">myLogger::setLevel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger5errorE6String6String"><code class="docutils literal notranslate"><span class="pre">myLogger::error()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger7warningE6String6String"><code class="docutils literal notranslate"><span class="pre">myLogger::warning()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger4infoE6String6String"><code class="docutils literal notranslate"><span class="pre">myLogger::info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger5debugE6String6String"><code class="docutils literal notranslate"><span class="pre">myLogger::debug()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger22enableLoggingInMonitorEv"><code class="docutils literal notranslate"><span class="pre">myLogger::enableLoggingInMonitor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger23disableLoggingInMonitorEv"><code class="docutils literal notranslate"><span class="pre">myLogger::disableLoggingInMonitor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger17enableLoggingInSDEv"><code class="docutils literal notranslate"><span class="pre">myLogger::enableLoggingInSD()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger18disableLoggingInSDEv"><code class="docutils literal notranslate"><span class="pre">myLogger::disableLoggingInSD()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger3logE6String6String"><code class="docutils literal notranslate"><span class="pre">myLogger::log()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger14buildlogFormatE6String6String"><code class="docutils literal notranslate"><span class="pre">myLogger::buildlogFormat()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger7logRollE6roll_t"><code class="docutils literal notranslate"><span class="pre">myLogger::logRoll()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger16deleteOldestFileEv"><code class="docutils literal notranslate"><span class="pre">myLogger::deleteOldestFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8myLogger13createNewFileEv"><code class="docutils literal notranslate"><span class="pre">myLogger::createNewFile()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sd">SD</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv48SDCustom"><code class="docutils literal notranslate"><span class="pre">SDCustom</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom8SDCustomEi"><code class="docutils literal notranslate"><span class="pre">SDCustom::SDCustom()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom5beginEv"><code class="docutils literal notranslate"><span class="pre">SDCustom::begin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom12isSDInsertedEv"><code class="docutils literal notranslate"><span class="pre">SDCustom::isSDInserted()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom10fileExistsE6String"><code class="docutils literal notranslate"><span class="pre">SDCustom::fileExists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom8openFileE6String"><code class="docutils literal notranslate"><span class="pre">SDCustom::openFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom9closeFileE6SDFile"><code class="docutils literal notranslate"><span class="pre">SDCustom::closeFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom10createFileE6String"><code class="docutils literal notranslate"><span class="pre">SDCustom::createFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom10deleteFileE6String"><code class="docutils literal notranslate"><span class="pre">SDCustom::deleteFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom5mkdirE6String"><code class="docutils literal notranslate"><span class="pre">SDCustom::mkdir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom9writeFileE6String6String"><code class="docutils literal notranslate"><span class="pre">SDCustom::writeFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8SDCustom8readFileE6String"><code class="docutils literal notranslate"><span class="pre">SDCustom::readFile()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#voltage-sensor">Voltage Sensor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv413VoltageSensor"><code class="docutils literal notranslate"><span class="pre">VoltageSensor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13VoltageSensor13VoltageSensorEi"><code class="docutils literal notranslate"><span class="pre">VoltageSensor::VoltageSensor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13VoltageSensor5setupEv"><code class="docutils literal notranslate"><span class="pre">VoltageSensor::setup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13VoltageSensor4readEv"><code class="docutils literal notranslate"><span class="pre">VoltageSensor::read()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13VoltageSensor14readPinVoltageEv"><code class="docutils literal notranslate"><span class="pre">VoltageSensor::readPinVoltage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13VoltageSensor11readVoltageEv"><code class="docutils literal notranslate"><span class="pre">VoltageSensor::readVoltage()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#current-sensor">Current Sensor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv413CurrentSensor"><code class="docutils literal notranslate"><span class="pre">CurrentSensor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13CurrentSensor13CurrentSensorEi"><code class="docutils literal notranslate"><span class="pre">CurrentSensor::CurrentSensor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13CurrentSensor5setupEv"><code class="docutils literal notranslate"><span class="pre">CurrentSensor::setup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13CurrentSensor4readEv"><code class="docutils literal notranslate"><span class="pre">CurrentSensor::read()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13CurrentSensor14readPinVoltageEv"><code class="docutils literal notranslate"><span class="pre">CurrentSensor::readPinVoltage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13CurrentSensor11readCurrentEv"><code class="docutils literal notranslate"><span class="pre">CurrentSensor::readCurrent()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13CurrentSensor11getBatLevelEf"><code class="docutils literal notranslate"><span class="pre">CurrentSensor::getBatLevel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13CurrentSensor8getPowerEff"><code class="docutils literal notranslate"><span class="pre">CurrentSensor::getPower()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#main-code">Main code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#checking">Checking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fetching">Fetching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sending">Sending</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#error">Error</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sleeep">Sleeep</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manuel.html">Manuel</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #829F93" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Modules</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/src/modules.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="modules">
+<h1>Modules<a class="headerlink" href="#modules" title="Link to this heading"></a></h1>
+<p>Here are all the modules</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#api" id="id1">API</a></p></li>
+<li><p><a class="reference internal" href="#wifi" id="id2">Wifi</a></p></li>
+<li><p><a class="reference internal" href="#dht" id="id3">Dht</a></p></li>
+<li><p><a class="reference internal" href="#logging" id="id4">Logging</a></p></li>
+<li><p><a class="reference internal" href="#sd" id="id5">SD</a></p></li>
+<li><p><a class="reference internal" href="#voltage-sensor" id="id6">Voltage Sensor</a></p></li>
+<li><p><a class="reference internal" href="#current-sensor" id="id7">Current Sensor</a></p></li>
+<li><p><a class="reference internal" href="#main-code" id="id8">Main code</a></p>
+<ul>
+<li><p><a class="reference internal" href="#checking" id="id9">Checking</a></p></li>
+<li><p><a class="reference internal" href="#fetching" id="id10">Fetching</a></p></li>
+<li><p><a class="reference internal" href="#sending" id="id11">Sending</a></p></li>
+<li><p><a class="reference internal" href="#error" id="id12">Error</a></p></li>
+<li><p><a class="reference internal" href="#sleeep" id="id13">Sleeep</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="api">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">API</a><a class="headerlink" href="#api" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv47api_lib">
+<span id="_CPPv37api_lib"></span><span id="_CPPv27api_lib"></span><span id="api_lib"></span><span class="target" id="classapi__lib"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">api_lib</span></span></span><a class="headerlink" href="#_CPPv47api_lib" title="Link to this definition"></a><br /></dt>
+<dd><p>Class to call the api. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7api_lib11getResponseEv">
+<span id="_CPPv3N7api_lib11getResponseEv"></span><span id="_CPPv2N7api_lib11getResponseEv"></span><span id="api_lib::getResponse"></span><span class="target" id="classapi__lib_1a4fec4082e2b75beb8006b5536626264d"></span><a class="reference internal" href="#_CPPv4N7api_lib8responseE" title="api_lib::response"><span class="n"><span class="pre">response</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getResponse</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7api_lib11getResponseEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Send data to the host + url. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>url</strong> – string to complete the host </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String string return of the api call </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7api_lib9clearJsonEv">
+<span id="_CPPv3N7api_lib9clearJsonEv"></span><span id="_CPPv2N7api_lib9clearJsonEv"></span><span id="api_lib::clearJson"></span><span class="target" id="classapi__lib_1aabebbcbe950df5fda0d98291f8483451"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clearJson</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7api_lib9clearJsonEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Clear the json payload. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>false </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7api_lib10createJsonEffffffb">
+<span id="_CPPv3N7api_lib10createJsonEffffffb"></span><span id="_CPPv2N7api_lib10createJsonEffffffb"></span><span id="api_lib::createJson__float.float.float.float.float.float.b"></span><span class="target" id="classapi__lib_1ac0f482823ca86795f884f89afb0069ca"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">createJson</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">temp</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">puissance_solaire</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">puissance_battery</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">puissance_5v</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">puissance_12v</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">niveauBatterie</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">niveauBatterieAlert</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7api_lib10createJsonEffffffb" title="Link to this definition"></a><br /></dt>
+<dd><p>Create the json which will be the payload of the api call. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>temp</strong> – </p></li>
+<li><p><strong>puissance</strong> – </p></li>
+<li><p><strong>niveauBatterie</strong> – </p></li>
+<li><p><strong>niveauBatterieAlert</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>false </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7api_lib6setSASE6String">
+<span id="_CPPv3N7api_lib6setSASE6String"></span><span id="_CPPv2N7api_lib6setSASE6String"></span><span id="api_lib::setSAS__String"></span><span class="target" id="classapi__lib_1a8063de939f5a0b187526301a095e1e3b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setSAS</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sas_token</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7api_lib6setSASE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the sas token. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sas_token</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N7api_lib8responseE">
+<span id="_CPPv3N7api_lib8responseE"></span><span id="_CPPv2N7api_lib8responseE"></span><span id="api_lib::response"></span><span class="target" id="structapi__lib_1_1response"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">response</span></span></span><a class="headerlink" href="#_CPPv4N7api_lib8responseE" title="Link to this definition"></a><br /></dt>
+<dd><p>Contain all the data of the api call. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7api_lib8response4codeE">
+<span id="_CPPv3N7api_lib8response4codeE"></span><span id="_CPPv2N7api_lib8response4codeE"></span><span id="api_lib::response::code__i"></span><span class="target" id="structapi__lib_1_1response_1a7c13b9ae968039f142e7e45ff60c1d14"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">code</span></span></span><a class="headerlink" href="#_CPPv4N7api_lib8response4codeE" title="Link to this definition"></a><br /></dt>
+<dd><p>HTTP code of the api call. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7api_lib8response4dataE">
+<span id="_CPPv3N7api_lib8response4dataE"></span><span id="_CPPv2N7api_lib8response4dataE"></span><span id="api_lib::response::data__String"></span><span class="target" id="structapi__lib_1_1response_1af49d5d3fbd1115eb621ac3c79c4316ae"></span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#_CPPv4N7api_lib8response4dataE" title="Link to this definition"></a><br /></dt>
+<dd><p>Data of the api call. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="wifi">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Wifi</a><a class="headerlink" href="#wifi" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv415wifi_connection">
+<span id="_CPPv315wifi_connection"></span><span id="_CPPv215wifi_connection"></span><span id="wifi_connection"></span><span class="target" id="classwifi__connection"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wifi_connection</span></span></span><a class="headerlink" href="#_CPPv415wifi_connection" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15wifi_connection15wifi_connectionE6String6String">
+<span id="_CPPv3N15wifi_connection15wifi_connectionE6String6String"></span><span id="_CPPv2N15wifi_connection15wifi_connectionE6String6String"></span><span id="wifi_connection::wifi_connection__String.String"></span><span class="target" id="classwifi__connection_1aa69d981e27c2438a4933de0c2761cedb"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wifi_connection</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ssid</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">password</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15wifi_connection15wifi_connectionE6String6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new wifi connection object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ssid</strong> – </p></li>
+<li><p><strong>password</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15wifi_connection7setSSIDE6String">
+<span id="_CPPv3N15wifi_connection7setSSIDE6String"></span><span id="_CPPv2N15wifi_connection7setSSIDE6String"></span><span id="wifi_connection::setSSID__String"></span><span class="target" id="classwifi__connection_1a4df2439a851a544f5d07e65be73bb69c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setSSID</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ssid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15wifi_connection7setSSIDE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the SSID parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>log_path</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15wifi_connection11setPasswordE6String">
+<span id="_CPPv3N15wifi_connection11setPasswordE6String"></span><span id="_CPPv2N15wifi_connection11setPasswordE6String"></span><span id="wifi_connection::setPassword__String"></span><span class="target" id="classwifi__connection_1af1a5f8c9b2a09f830a3675e0792eded1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPassword</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">password</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15wifi_connection11setPasswordE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Password parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>password</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15wifi_connection5getIPEv">
+<span id="_CPPv3NK15wifi_connection5getIPEv"></span><span id="_CPPv2NK15wifi_connection5getIPEv"></span><span id="wifi_connection::getIPC"></span><span class="target" id="classwifi__connection_1acc6036c49974f5fdba7c76ea5987944b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getIP</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK15wifi_connection5getIPEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the IP. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15wifi_connection9getStatusEv">
+<span id="_CPPv3NK15wifi_connection9getStatusEv"></span><span id="_CPPv2NK15wifi_connection9getStatusEv"></span><span id="wifi_connection::getStatusC"></span><span class="target" id="classwifi__connection_1ac88d5e9c734f8dd272cfc05a4c6bda08"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStatus</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK15wifi_connection9getStatusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the wifi status. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>false </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15wifi_connection11isConnectedEv">
+<span id="_CPPv3NK15wifi_connection11isConnectedEv"></span><span id="_CPPv2NK15wifi_connection11isConnectedEv"></span><span id="wifi_connection::isConnectedC"></span><span class="target" id="classwifi__connection_1ab19d4ae507d1c5f570747d5ba9f9b0a8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isConnected</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK15wifi_connection11isConnectedEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the wifi is connected. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>false </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15wifi_connection7connectEi">
+<span id="_CPPv3N15wifi_connection7connectEi"></span><span id="_CPPv2N15wifi_connection7connectEi"></span><span id="wifi_connection::connect__i"></span><span class="target" id="classwifi__connection_1a33816fba6968e02098085e7d6c52708b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">connect</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_attempts</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15wifi_connection7connectEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Connect to the wifi in less than max_attempts. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>max_attempts</strong> – number of attempts for the wifi to connect </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool wifi connected or not </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15wifi_connection10disconnectEv">
+<span id="_CPPv3N15wifi_connection10disconnectEv"></span><span id="_CPPv2N15wifi_connection10disconnectEv"></span><span id="wifi_connection::disconnect"></span><span class="target" id="classwifi__connection_1a1e7b220d4c84b42ed783167e47a4121e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">disconnect</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15wifi_connection10disconnectEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Disconnect from the wifi. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>false </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15wifi_connection10setModeOffEv">
+<span id="_CPPv3N15wifi_connection10setModeOffEv"></span><span id="_CPPv2N15wifi_connection10setModeOffEv"></span><span id="wifi_connection::setModeOff"></span><span class="target" id="classwifi__connection_1af71be567d9bd98961a01d5c7c582b24f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setModeOff</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15wifi_connection10setModeOffEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Disable the wifi. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mode</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>false </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="dht">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Dht</a><a class="headerlink" href="#dht" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv49DHTSensor">
+<span id="_CPPv39DHTSensor"></span><span id="_CPPv29DHTSensor"></span><span id="DHTSensor"></span><span class="target" id="classDHTSensor"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DHTSensor</span></span></span><a class="headerlink" href="#_CPPv49DHTSensor" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9DHTSensor9DHTSensorEi">
+<span id="_CPPv3N9DHTSensor9DHTSensorEi"></span><span id="_CPPv2N9DHTSensor9DHTSensorEi"></span><span id="DHTSensor::DHTSensor__i"></span><span class="target" id="classDHTSensor_1abcf69115ab7bb660d0dff3618d489113"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DHTSensor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pin</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9DHTSensor9DHTSensorEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new <a class="reference internal" href="#classDHTSensor"><span class="std std-ref">DHTSensor</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pin</strong> – DHT11 pin </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9DHTSensor11getHumidityEv">
+<span id="_CPPv3N9DHTSensor11getHumidityEv"></span><span id="_CPPv2N9DHTSensor11getHumidityEv"></span><span id="DHTSensor::getHumidity"></span><span class="target" id="classDHTSensor_1a27315daa48138acbc74f5ba5d7fdea4e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getHumidity</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9DHTSensor11getHumidityEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Humidity object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float Humidity value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9DHTSensor14getTemperatureEv">
+<span id="_CPPv3N9DHTSensor14getTemperatureEv"></span><span id="_CPPv2N9DHTSensor14getTemperatureEv"></span><span id="DHTSensor::getTemperature"></span><span class="target" id="classDHTSensor_1a29cf4b3cb0a0578ca18164e44fa24edc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getTemperature</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9DHTSensor14getTemperatureEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Temperature object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float Temperature value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9DHTSensor9getValuesEv">
+<span id="_CPPv3N9DHTSensor9getValuesEv"></span><span id="_CPPv2N9DHTSensor9getValuesEv"></span><span id="DHTSensor::getValues"></span><span class="target" id="classDHTSensor_1a9985d82a04364cec6d944b89aebd3e6a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getValues</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9DHTSensor9getValuesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Values object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float* Humidity and Temperature values </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9DHTSensor16isCorrect_valuesEPf">
+<span id="_CPPv3N9DHTSensor16isCorrect_valuesEPf"></span><span id="_CPPv2N9DHTSensor16isCorrect_valuesEPf"></span><span id="DHTSensor::isCorrect_values__floatP"></span><span class="target" id="classDHTSensor_1a96b074c0c0a7b95010bc49303d94b62c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isCorrect_values</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">values</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9DHTSensor16isCorrect_valuesEPf" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the values are correct. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>values</strong> – Array of values </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool True if values are correct </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9DHTSensor7isReadyEv">
+<span id="_CPPv3N9DHTSensor7isReadyEv"></span><span id="_CPPv2N9DHTSensor7isReadyEv"></span><span id="DHTSensor::isReady"></span><span class="target" id="classDHTSensor_1ab24536d847e43464e9560adbaf9f8931"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isReady</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9DHTSensor7isReadyEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the sensor is ready. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool True if the sensor is ready </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="logging">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Logging</a><a class="headerlink" href="#logging" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv48myLogger">
+<span id="_CPPv38myLogger"></span><span id="_CPPv28myLogger"></span><span id="myLogger"></span><span class="target" id="classmyLogger"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myLogger</span></span></span><a class="headerlink" href="#_CPPv48myLogger" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger7level_tE">
+<span id="_CPPv3N8myLogger7level_tE"></span><span id="_CPPv2N8myLogger7level_tE"></span><span class="target" id="classmyLogger_1ac711e3c653fa61bfe2bd19b723b608c3"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">level_t</span></span></span><a class="headerlink" href="#_CPPv4N8myLogger7level_tE" title="Link to this definition"></a><br /></dt>
+<dd><p>Enumeration of the debug levels. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger7level_t5DEBUGE">
+<span id="_CPPv3N8myLogger7level_t5DEBUGE"></span><span id="_CPPv2N8myLogger7level_t5DEBUGE"></span><span class="target" id="classmyLogger_1ac711e3c653fa61bfe2bd19b723b608c3a7db0cb7cc61024f2eec804c2e0e876a1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DEBUG</span></span></span><a class="headerlink" href="#_CPPv4N8myLogger7level_t5DEBUGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger7level_t4INFOE">
+<span id="_CPPv3N8myLogger7level_t4INFOE"></span><span id="_CPPv2N8myLogger7level_t4INFOE"></span><span class="target" id="classmyLogger_1ac711e3c653fa61bfe2bd19b723b608c3a488012f79de3dcb30c1b10396dd9c1eb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">INFO</span></span></span><a class="headerlink" href="#_CPPv4N8myLogger7level_t4INFOE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger7level_t4WARNE">
+<span id="_CPPv3N8myLogger7level_t4WARNE"></span><span id="_CPPv2N8myLogger7level_t4WARNE"></span><span class="target" id="classmyLogger_1ac711e3c653fa61bfe2bd19b723b608c3a4d29b61c13eb26429df979e4079c65d8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WARN</span></span></span><a class="headerlink" href="#_CPPv4N8myLogger7level_t4WARNE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger7level_t5ERRORE">
+<span id="_CPPv3N8myLogger7level_t5ERRORE"></span><span id="_CPPv2N8myLogger7level_t5ERRORE"></span><span class="target" id="classmyLogger_1ac711e3c653fa61bfe2bd19b723b608c3a5daf24fb42cc67025dd386cd53e73e4d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ERROR</span></span></span><a class="headerlink" href="#_CPPv4N8myLogger7level_t5ERRORE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger8myLoggerER8SDCustomii7level_t">
+<span id="_CPPv3N8myLogger8myLoggerER8SDCustomii7level_t"></span><span id="_CPPv2N8myLogger8myLoggerER8SDCustomii7level_t"></span><span id="myLogger::myLogger__SDCustomR.i.i.level_t"></span><span class="target" id="classmyLogger_1a32d215e499371a3cf3cca5da8d609ac9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">myLogger</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv48SDCustom" title="SDCustom"><span class="n"><span class="pre">SDCustom</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">sd</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">log_file</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">log_path</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span>, <a class="reference internal" href="#_CPPv4N8myLogger7level_tE" title="myLogger::level_t"><span class="n"><span class="pre">level_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8myLogger7level_t4INFOE" title="myLogger::INFO"><span class="n"><span class="pre">INFO</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger8myLoggerER8SDCustomii7level_t" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new my Logger object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sd</strong> – </p></li>
+<li><p><strong>log_file, default</strong> – value is 0 </p></li>
+<li><p><strong>log_path, default</strong> – value is 0 </p></li>
+<li><p><strong>level, default</strong> – value is INFO </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger4initEv">
+<span id="_CPPv3N8myLogger4initEv"></span><span id="_CPPv2N8myLogger4initEv"></span><span id="myLogger::init"></span><span class="target" id="classmyLogger_1ad23b181afe0eccf231701068912277f2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger4initEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Initialise the logger. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8myLogger8getLevelEv">
+<span id="_CPPv3NK8myLogger8getLevelEv"></span><span id="_CPPv2NK8myLogger8getLevelEv"></span><span id="myLogger::getLevelC"></span><span class="target" id="classmyLogger_1abf786e116ad9dfb51cd806b982efe8c4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8myLogger7level_tE" title="myLogger::level_t"><span class="n"><span class="pre">level_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getLevel</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8myLogger8getLevelEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Level parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>level_t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8myLogger10getLogPathEv">
+<span id="_CPPv3NK8myLogger10getLogPathEv"></span><span id="_CPPv2NK8myLogger10getLogPathEv"></span><span id="myLogger::getLogPathC"></span><span class="target" id="classmyLogger_1abacd100fa3dba269632711eb99b93a78"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getLogPath</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8myLogger10getLogPathEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Log Path parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8myLogger10getLogFileEv">
+<span id="_CPPv3NK8myLogger10getLogFileEv"></span><span id="_CPPv2NK8myLogger10getLogFileEv"></span><span id="myLogger::getLogFileC"></span><span class="target" id="classmyLogger_1af440d46190f823c9817c610a4ed88f34"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getLogFile</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8myLogger10getLogFileEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Log File parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger13setOldLogFileEi">
+<span id="_CPPv3N8myLogger13setOldLogFileEi"></span><span id="_CPPv2N8myLogger13setOldLogFileEi"></span><span id="myLogger::setOldLogFile__i"></span><span class="target" id="classmyLogger_1af9939ab221cd5f31aef73c0698bb4df3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setOldLogFile</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">old_log</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger13setOldLogFileEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Old Log File parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>old_log</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8myLogger13getOldLogFileEv">
+<span id="_CPPv3NK8myLogger13getOldLogFileEv"></span><span id="_CPPv2NK8myLogger13getOldLogFileEv"></span><span id="myLogger::getOldLogFileC"></span><span class="target" id="classmyLogger_1a3fa4f3b7654558a947030871fff9c674"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getOldLogFile</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8myLogger13getOldLogFileEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Old Log File parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger10setLogPathEi">
+<span id="_CPPv3N8myLogger10setLogPathEi"></span><span id="_CPPv2N8myLogger10setLogPathEi"></span><span id="myLogger::setLogPath__i"></span><span class="target" id="classmyLogger_1a788d188e5793d9ef71086e9395125890"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLogPath</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">log_path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger10setLogPathEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Log Path parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>log_path</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger10setLogFileEi">
+<span id="_CPPv3N8myLogger10setLogFileEi"></span><span id="_CPPv2N8myLogger10setLogFileEi"></span><span id="myLogger::setLogFile__i"></span><span class="target" id="classmyLogger_1a5e56d3c12eda6da1bf2daeb7a18ee86b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLogFile</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">log_file</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger10setLogFileEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Log File parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>log_file</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger14setLogFullPathEv">
+<span id="_CPPv3N8myLogger14setLogFullPathEv"></span><span id="_CPPv2N8myLogger14setLogFullPathEv"></span><span id="myLogger::setLogFullPath"></span><span class="target" id="classmyLogger_1a4d2badf28ebc5dd6ea179a137c2981c1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLogFullPath</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger14setLogFullPathEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Log Full Path parameter. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger8setLevelE7level_t">
+<span id="_CPPv3N8myLogger8setLevelE7level_t"></span><span id="_CPPv2N8myLogger8setLevelE7level_t"></span><span id="myLogger::setLevel__level_t"></span><span class="target" id="classmyLogger_1a92c5f02994cb4e1aeae89f9a90285abf"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLevel</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N8myLogger7level_tE" title="myLogger::level_t"><span class="n"><span class="pre">level_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger8setLevelE7level_t" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Level parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>level</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger5errorE6String6String">
+<span id="_CPPv3N8myLogger5errorE6String6String"></span><span id="_CPPv2N8myLogger5errorE6String6String"></span><span id="myLogger::error__String.String"></span><span class="target" id="classmyLogger_1a17871fca537c8609a3ac8c7c2bb9719e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">error</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tag</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger5errorE6String6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Function to write error log. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – First part to identify where comes the log </p></li>
+<li><p><strong>message</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger7warningE6String6String">
+<span id="_CPPv3N8myLogger7warningE6String6String"></span><span id="_CPPv2N8myLogger7warningE6String6String"></span><span id="myLogger::warning__String.String"></span><span class="target" id="classmyLogger_1a18b71c939cf9dba82b82f50accee8ebe"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">warning</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tag</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger7warningE6String6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Function to write warning log. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – First part to identify where comes the log </p></li>
+<li><p><strong>message</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger4infoE6String6String">
+<span id="_CPPv3N8myLogger4infoE6String6String"></span><span id="_CPPv2N8myLogger4infoE6String6String"></span><span id="myLogger::info__String.String"></span><span class="target" id="classmyLogger_1a8c6c7b9d1f97103979be317fe8fe83bf"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">info</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tag</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger4infoE6String6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Function to write info log. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – First part to identify where comes the log </p></li>
+<li><p><strong>message</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger5debugE6String6String">
+<span id="_CPPv3N8myLogger5debugE6String6String"></span><span id="_CPPv2N8myLogger5debugE6String6String"></span><span id="myLogger::debug__String.String"></span><span class="target" id="classmyLogger_1a40c793a254de92079c7f499d03f48937"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">debug</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tag</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger5debugE6String6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Function to write debug log. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – First part to identify where comes the log </p></li>
+<li><p><strong>message</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger22enableLoggingInMonitorEv">
+<span id="_CPPv3N8myLogger22enableLoggingInMonitorEv"></span><span id="_CPPv2N8myLogger22enableLoggingInMonitorEv"></span><span id="myLogger::enableLoggingInMonitor"></span><span class="target" id="classmyLogger_1a28a78a7aa80cae651aa2237173fea04c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">enableLoggingInMonitor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger22enableLoggingInMonitorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable logging in the monitor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger23disableLoggingInMonitorEv">
+<span id="_CPPv3N8myLogger23disableLoggingInMonitorEv"></span><span id="_CPPv2N8myLogger23disableLoggingInMonitorEv"></span><span id="myLogger::disableLoggingInMonitor"></span><span class="target" id="classmyLogger_1af7d5212f2b1c3542f9ee9c254cbfb3fe"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">disableLoggingInMonitor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger23disableLoggingInMonitorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Disable logging in the monitor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger17enableLoggingInSDEv">
+<span id="_CPPv3N8myLogger17enableLoggingInSDEv"></span><span id="_CPPv2N8myLogger17enableLoggingInSDEv"></span><span id="myLogger::enableLoggingInSD"></span><span class="target" id="classmyLogger_1a7d8873f9d6363ec7eb5e8370fc808dce"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">enableLoggingInSD</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger17enableLoggingInSDEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable logging in the SD Card. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger18disableLoggingInSDEv">
+<span id="_CPPv3N8myLogger18disableLoggingInSDEv"></span><span id="_CPPv2N8myLogger18disableLoggingInSDEv"></span><span id="myLogger::disableLoggingInSD"></span><span class="target" id="classmyLogger_1aa512e6fbf1f072284b36d3f986349ca0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">disableLoggingInSD</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger18disableLoggingInSDEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Disable logging in the SD Card. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger3logE6String6String">
+<span id="_CPPv3N8myLogger3logE6String6String"></span><span id="_CPPv2N8myLogger3logE6String6String"></span><span id="myLogger::log__String.String"></span><span class="target" id="classmyLogger_1a5efaa4d4be16db5b09aa9fe4bc98ae96"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">log</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">logFormat</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger3logE6String6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Main function to write the log. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>logFormat</strong> – Format of the log </p></li>
+<li><p><strong>message</strong> – Message to log </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger14buildlogFormatE6String6String">
+<span id="_CPPv3N8myLogger14buildlogFormatE6String6String"></span><span id="_CPPv2N8myLogger14buildlogFormatE6String6String"></span><span id="myLogger::buildlogFormat__String.String"></span><span class="target" id="classmyLogger_1aef4b5776ac10f03a1db79489a67d4d19"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">buildlogFormat</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">logTag</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger14buildlogFormatE6String6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Build the format of the log. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>logTag</strong> – First part to identify where comes the log </p></li>
+<li><p><strong>level</strong> – Level of the log </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger7logRollE6roll_t">
+<span id="_CPPv3N8myLogger7logRollE6roll_t"></span><span id="_CPPv2N8myLogger7logRollE6roll_t"></span><span id="myLogger::logRoll__roll_t"></span><span class="target" id="classmyLogger_1a40ea6555afcb5446ef0ac0db8d730319"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">logRoll</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">roll_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">roll</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger7logRollE6roll_t" title="Link to this definition"></a><br /></dt>
+<dd><p>Roll the log, if size is too big or if there is too much files. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>roll</strong> – Argument to know if we need to switch file or delete the oldest one </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger16deleteOldestFileEv">
+<span id="_CPPv3N8myLogger16deleteOldestFileEv"></span><span id="_CPPv2N8myLogger16deleteOldestFileEv"></span><span id="myLogger::deleteOldestFile"></span><span class="target" id="classmyLogger_1ae45b9bf34211c752ecf50d55f6f3588b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deleteOldestFile</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger16deleteOldestFileEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Delete the oldest log file. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8myLogger13createNewFileEv">
+<span id="_CPPv3N8myLogger13createNewFileEv"></span><span id="_CPPv2N8myLogger13createNewFileEv"></span><span id="myLogger::createNewFile"></span><span class="target" id="classmyLogger_1aff9c31db40b2335c966f452ef7706e37"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">createNewFile</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8myLogger13createNewFileEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Create a New log File. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="sd">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">SD</a><a class="headerlink" href="#sd" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv48SDCustom">
+<span id="_CPPv38SDCustom"></span><span id="_CPPv28SDCustom"></span><span id="SDCustom"></span><span class="target" id="classSDCustom"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SDCustom</span></span></span><a class="headerlink" href="#_CPPv48SDCustom" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom8SDCustomEi">
+<span id="_CPPv3N8SDCustom8SDCustomEi"></span><span id="_CPPv2N8SDCustom8SDCustomEi"></span><span id="SDCustom::SDCustom__i"></span><span class="target" id="classSDCustom_1a9d93facce8aa4750ea4c6f77143bc523"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SDCustom</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom8SDCustomEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new <a class="reference internal" href="#classSDCustom"><span class="std std-ref">SDCustom</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> – the max size of the SD Card </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom5beginEv">
+<span id="_CPPv3N8SDCustom5beginEv"></span><span id="_CPPv2N8SDCustom5beginEv"></span><span id="SDCustom::begin"></span><span class="target" id="classSDCustom_1a5559ce3c0829b914c7567328b70b4156"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom5beginEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Start the SD Card. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool has the SD Card started </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom12isSDInsertedEv">
+<span id="_CPPv3N8SDCustom12isSDInsertedEv"></span><span id="_CPPv2N8SDCustom12isSDInsertedEv"></span><span id="SDCustom::isSDInserted"></span><span class="target" id="classSDCustom_1a4e7ea8dab9a1cd3930d3c735b2d49d86"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isSDInserted</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom12isSDInsertedEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the SD Card is inserted. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool is the SD Card inserted </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom10fileExistsE6String">
+<span id="_CPPv3N8SDCustom10fileExistsE6String"></span><span id="_CPPv2N8SDCustom10fileExistsE6String"></span><span id="SDCustom::fileExists__String"></span><span class="target" id="classSDCustom_1ac3483af67b51d8d03bb933af0eb47b01"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fileExists</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom10fileExistsE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if a file exists. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – the name of the file </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool does the file exist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom8openFileE6String">
+<span id="_CPPv3N8SDCustom8openFileE6String"></span><span id="_CPPv2N8SDCustom8openFileE6String"></span><span id="SDCustom::openFile__String"></span><span class="target" id="classSDCustom_1a8154457a10136dec627d54f7f727c76e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">SDFile</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">openFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom8openFileE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Open a file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>SDFile </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom9closeFileE6SDFile">
+<span id="_CPPv3N8SDCustom9closeFileE6SDFile"></span><span id="_CPPv2N8SDCustom9closeFileE6SDFile"></span><span id="SDCustom::closeFile__SDFile"></span><span class="target" id="classSDCustom_1ae283fee8e06f7661dd9d58b2dcd4d857"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">closeFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">SDFile</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">file</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom9closeFileE6SDFile" title="Link to this definition"></a><br /></dt>
+<dd><p>Close a file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file</strong> – the file to close </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom10createFileE6String">
+<span id="_CPPv3N8SDCustom10createFileE6String"></span><span id="_CPPv2N8SDCustom10createFileE6String"></span><span id="SDCustom::createFile__String"></span><span class="target" id="classSDCustom_1ab2bee3a392411f4ae3fafc58f84dbeaf"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">createFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom10createFileE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Create a file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – the name of the file </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom10deleteFileE6String">
+<span id="_CPPv3N8SDCustom10deleteFileE6String"></span><span id="_CPPv2N8SDCustom10deleteFileE6String"></span><span id="SDCustom::deleteFile__String"></span><span class="target" id="classSDCustom_1ad04fd920060d2b842a139aa2a1f7e2bd"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deleteFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom10deleteFileE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Delete a file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – the name of the file </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom5mkdirE6String">
+<span id="_CPPv3N8SDCustom5mkdirE6String"></span><span id="_CPPv2N8SDCustom5mkdirE6String"></span><span id="SDCustom::mkdir__String"></span><span class="target" id="classSDCustom_1a0cca04a48bde15585e1360bbedd9a025"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mkdir</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom5mkdirE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Create a directory. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom9writeFileE6String6String">
+<span id="_CPPv3N8SDCustom9writeFileE6String6String"></span><span id="_CPPv2N8SDCustom9writeFileE6String6String"></span><span id="SDCustom::writeFile__String.String"></span><span class="target" id="classSDCustom_1a22e5759aa61495354905167a8d840563"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">writeFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">filename</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom9writeFileE6String6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Write to a file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – the name of the file </p></li>
+<li><p><strong>message</strong> – the message to write </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8SDCustom8readFileE6String">
+<span id="_CPPv3N8SDCustom8readFileE6String"></span><span id="_CPPv2N8SDCustom8readFileE6String"></span><span id="SDCustom::readFile__String"></span><span class="target" id="classSDCustom_1ac1472fe69080f5179c4ffa224f3f803d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8SDCustom8readFileE6String" title="Link to this definition"></a><br /></dt>
+<dd><p>Read a file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – the name of the file </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String the contents of the file </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="voltage-sensor">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Voltage Sensor</a><a class="headerlink" href="#voltage-sensor" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv413VoltageSensor">
+<span id="_CPPv313VoltageSensor"></span><span id="_CPPv213VoltageSensor"></span><span id="VoltageSensor"></span><span class="target" id="classVoltageSensor"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VoltageSensor</span></span></span><a class="headerlink" href="#_CPPv413VoltageSensor" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13VoltageSensor13VoltageSensorEi">
+<span id="_CPPv3N13VoltageSensor13VoltageSensorEi"></span><span id="_CPPv2N13VoltageSensor13VoltageSensorEi"></span><span id="VoltageSensor::VoltageSensor__i"></span><span class="target" id="classVoltageSensor_1a4bf70c1dcefabfbf22d0e9507e4856fc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VoltageSensor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pin</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13VoltageSensor13VoltageSensorEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new Voltage Sensor object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pin</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13VoltageSensor5setupEv">
+<span id="_CPPv3N13VoltageSensor5setupEv"></span><span id="_CPPv2N13VoltageSensor5setupEv"></span><span id="VoltageSensor::setup"></span><span class="target" id="classVoltageSensor_1a33fcc58d10cb07ac560f1e65476895cb"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setup</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13VoltageSensor5setupEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Setup the pin as input. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13VoltageSensor4readEv">
+<span id="_CPPv3N13VoltageSensor4readEv"></span><span id="_CPPv2N13VoltageSensor4readEv"></span><span id="VoltageSensor::read"></span><span class="target" id="classVoltageSensor_1a1d75b018df31ff876f43aac2ad92b2fe"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">read</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13VoltageSensor4readEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Read the raw value from the pin. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float Value between 0 and 4095 </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13VoltageSensor14readPinVoltageEv">
+<span id="_CPPv3N13VoltageSensor14readPinVoltageEv"></span><span id="_CPPv2N13VoltageSensor14readPinVoltageEv"></span><span id="VoltageSensor::readPinVoltage"></span><span class="target" id="classVoltageSensor_1aef946d1655510711b24082db3ab355fc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readPinVoltage</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13VoltageSensor14readPinVoltageEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Read the voltage from the pin. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13VoltageSensor11readVoltageEv">
+<span id="_CPPv3N13VoltageSensor11readVoltageEv"></span><span id="_CPPv2N13VoltageSensor11readVoltageEv"></span><span id="VoltageSensor::readVoltage"></span><span class="target" id="classVoltageSensor_1ae995eed43cee2b1feebfad6134e09cbe"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readVoltage</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13VoltageSensor11readVoltageEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Read the voltage from the sensor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="current-sensor">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Current Sensor</a><a class="headerlink" href="#current-sensor" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv413CurrentSensor">
+<span id="_CPPv313CurrentSensor"></span><span id="_CPPv213CurrentSensor"></span><span id="CurrentSensor"></span><span class="target" id="classCurrentSensor"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CurrentSensor</span></span></span><a class="headerlink" href="#_CPPv413CurrentSensor" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13CurrentSensor13CurrentSensorEi">
+<span id="_CPPv3N13CurrentSensor13CurrentSensorEi"></span><span id="_CPPv2N13CurrentSensor13CurrentSensorEi"></span><span id="CurrentSensor::CurrentSensor__i"></span><span class="target" id="classCurrentSensor_1ae0c137c14b003c82684f3d5928a01d61"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CurrentSensor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pin</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13CurrentSensor13CurrentSensorEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new Current Sensor object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pin</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13CurrentSensor5setupEv">
+<span id="_CPPv3N13CurrentSensor5setupEv"></span><span id="_CPPv2N13CurrentSensor5setupEv"></span><span id="CurrentSensor::setup"></span><span class="target" id="classCurrentSensor_1a8ae1886601163983335879062e8a96b9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setup</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13CurrentSensor5setupEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Setup the pin as input. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13CurrentSensor4readEv">
+<span id="_CPPv3N13CurrentSensor4readEv"></span><span id="_CPPv2N13CurrentSensor4readEv"></span><span id="CurrentSensor::read"></span><span class="target" id="classCurrentSensor_1aa76c3de3b58eddefed70f813c8d9bb63"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">read</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13CurrentSensor4readEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Read the raw value from the pin. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float Value between 0 and 4095 </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13CurrentSensor14readPinVoltageEv">
+<span id="_CPPv3N13CurrentSensor14readPinVoltageEv"></span><span id="_CPPv2N13CurrentSensor14readPinVoltageEv"></span><span id="CurrentSensor::readPinVoltage"></span><span class="target" id="classCurrentSensor_1a95fe74c6d2acbaea49ca2969cb58057c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readPinVoltage</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13CurrentSensor14readPinVoltageEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Read the voltage from the pin. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13CurrentSensor11readCurrentEv">
+<span id="_CPPv3N13CurrentSensor11readCurrentEv"></span><span id="_CPPv2N13CurrentSensor11readCurrentEv"></span><span id="CurrentSensor::readCurrent"></span><span class="target" id="classCurrentSensor_1a3441c04ba6860118f8ceb9e34611b3c4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readCurrent</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13CurrentSensor11readCurrentEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Read the current from the sensor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13CurrentSensor11getBatLevelEf">
+<span id="_CPPv3N13CurrentSensor11getBatLevelEf"></span><span id="_CPPv2N13CurrentSensor11getBatLevelEf"></span><span id="CurrentSensor::getBatLevel__float"></span><span class="target" id="classCurrentSensor_1ab309fbb1b5d657bcef68933ebb5b0421"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getBatLevel</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">voltage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13CurrentSensor11getBatLevelEf" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Bat Level with the given current and the voltage. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current</strong> – </p></li>
+<li><p><strong>voltage</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13CurrentSensor8getPowerEff">
+<span id="_CPPv3N13CurrentSensor8getPowerEff"></span><span id="_CPPv2N13CurrentSensor8getPowerEff"></span><span id="CurrentSensor::getPower__float.float"></span><span class="target" id="classCurrentSensor_1adbec49bb243ddebf75c56d4c606007bc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPower</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">current</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">voltage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13CurrentSensor8getPowerEff" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Power with the given current and the voltage. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current</strong> – </p></li>
+<li><p><strong>voltage</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="main-code">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Main code</a><a class="headerlink" href="#main-code" title="Link to this heading"></a></h2>
+<p>First all, we need to import all the modules we need. Then we will create akk the variables we will need later. After that, we need to create a logger object, for developpment purpose, it will be set to debug. This is useful to see all the messages in the console. To finish, we declare all the prototype for the functions.</p>
+<dl class="simple">
+<dt>Next we can write the main code. It starts with the setup :</dt><dd><ol class="arabic simple">
+<li><p>We establish the serial communication</p></li>
+<li><p>We declare the pins we will use</p></li>
+<li><p>We initialize the logger</p></li>
+<li><p>We initialize the wifi</p></li>
+<li><p>We setup the sensors</p></li>
+</ol>
+</dd>
+<dt>Then we can write the loop, the loop is basically a state machine. All the states are described in the following diagram :</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">INIT</span></code>: State during the setup function</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CHECKING</span></code>: Check the device status (SD, wifi, …)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">FETCHING</span></code>: Fetch the data from the sensors</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SENDING</span></code>: Send the data to the server</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ERROR</span></code>: handle the errors</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SLEEP</span></code>: Sleep for a certain amount of time</p></li>
+</ul>
+</dd>
+</dl>
+<p>Now we will describe each state of the state machine :</p>
+<section id="checking">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Checking</a><a class="headerlink" href="#checking" title="Link to this heading"></a></h3>
+<p>Check wether the SD card is present or not. If it is not, we will disable the logging in the SD and enable it in the Serial.</p>
+</section>
+<section id="fetching">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Fetching</a><a class="headerlink" href="#fetching" title="Link to this heading"></a></h3>
+</section>
+<section id="sending">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Sending</a><a class="headerlink" href="#sending" title="Link to this heading"></a></h3>
+</section>
+<section id="error">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Error</a><a class="headerlink" href="#error" title="Link to this heading"></a></h3>
+</section>
+<section id="sleeep">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Sleeep</a><a class="headerlink" href="#sleeep" title="Link to this heading"></a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright - 2023 SolarSync.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
