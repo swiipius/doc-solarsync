@@ -7,6 +7,10 @@ Before starting
 
 You mays encounter some problems with the compilation. You will need to comment line **524** of file ``Sd2PinMap.h`` in folder ``.pio/libdeps/esp32dev/SD/src/utility/``
 
+.. image:: ../ressource/error.png
+    :width: 100%
+    :align: center
+
 How to use the serial communication
 ===================================
 
